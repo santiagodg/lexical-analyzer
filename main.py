@@ -3,9 +3,10 @@ import sys
 
 # HOW THE PROGRAM SHOULD BE CALLED
 #
-# You should have 2 files ready:
+# You should have 3 files ready:
 # 1.  Transition matrix file
 # 2.  Input string file
+# 3.  The output file
 #
 # Call
 # py main.py <transition-matrix-file> <input-string-file> <output-file-name>
