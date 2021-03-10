@@ -5,30 +5,30 @@
     },
     {
         "type": "BINARY NUMBER",
-        "value": " 0010b"
+        "value": "0010b"
     },
     {
         "type": "OPERATOR",
-        "value": " +"
+        "value": "+"
     },
     {
         "type": "OPERATOR",
-        "value": " -"
+        "value": "-"
     },
     {
         "type": "PARENTHESIS",
-        "value": " ("
+        "value": "("
     },
     {
         "type": "BINARY NUMBER",
-        "value": " 1001b"
+        "value": "1001b"
     },
     {
         "type": "PARENTHESIS",
-        "value": " )"
+        "value": ")"
     },
     {
         "type": "BINARY NUMBER",
-        "value": " 11b"
+        "value": "11b"
     }
 ]

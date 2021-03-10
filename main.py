@@ -19,12 +19,14 @@ def parse(transitionMatrix, inputStr):
     while index < len(inputStr):
         value = ""
 
+        # poor man's 'do-while'
         char = inputStr[index]
         index += 1
 
         if char in transitionMatrix["transitions"][state]:
             state = transitionMatrix["transitions"][state][char]
-            value += char
+            if int(state) > 0:
+                value += char
         else:
             state = transitionMatrix["errorState"]
             raise Exception("Reached error state at index " + str(index - 1) + ".")
@@ -35,10 +37,14 @@ def parse(transitionMatrix, inputStr):
 
             if char in transitionMatrix["transitions"][state]:
                 state = transitionMatrix["transitions"][state][char]
-                value += char
+                if int(state) > 0:
+                    value += char
             else:
                 state = transitionMatrix["errorState"]
                 raise Exception("Reached error state at index " + str(index - 1) + ".")
+
+        if state > transitionMatrix["specialAcceptingStateTreshold"]:
+            index -= 1
 
         if state < transitionMatrix["acceptingStateTreshold"]:
             raise Exception("Finished without accepting state.")

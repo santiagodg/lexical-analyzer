@@ -1,6 +1,7 @@
 {
     "startingState": "0",
     "acceptingStateTreshold": "100",
+    "specialAcceptingStateTreshold": "200",
     "errorState": "999",
     "acceptingStates": {
         "102": "BINARY NUMBER",
@@ -16,7 +17,8 @@
             "-": "103",
             "(": "104",
             ")": "104",
-            " ": "0"
+            " ": "0",
+            "\n": "0"
         },
         "1": {
             "0": "1",
@@ -26,7 +28,8 @@
             "-": "999",
             "(": "999",
             ")": "999",
-            " ": "999"
+            " ": "999",
+            "\n": "0"
         }
     }
 }
