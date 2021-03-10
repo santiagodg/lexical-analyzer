@@ -1,0 +1,102 @@
+[
+    {
+        "type": "ASSIGNMENT",
+        "value": "MOV"
+    },
+    {
+        "type": "INTEGER",
+        "value": "5"
+    },
+    {
+        "type": "REGISTER",
+        "value": "#A"
+    },
+    {
+        "type": "ASSIGNMENT",
+        "value": "MOV"
+    },
+    {
+        "type": "INTEGER",
+        "value": "10"
+    },
+    {
+        "type": "REGISTER",
+        "value": "#B"
+    },
+    {
+        "type": "OPERATION",
+        "value": "SUM"
+    },
+    {
+        "type": "REGISTER",
+        "value": "#A"
+    },
+    {
+        "type": "REGISTER",
+        "value": "#B"
+    },
+    {
+        "type": "ASSIGNMENT",
+        "value": "MOV"
+    },
+    {
+        "type": "REGISTER",
+        "value": "#B"
+    },
+    {
+        "type": "REGISTER",
+        "value": "#C"
+    },
+    {
+        "type": "OPERATION",
+        "value": "MUL"
+    },
+    {
+        "type": "REGISTER",
+        "value": "#C"
+    },
+    {
+        "type": "REGISTER",
+        "value": "#A"
+    },
+    {
+        "type": "ASSIGNMENT",
+        "value": "MOV"
+    },
+    {
+        "type": "REGISTER",
+        "value": "#C"
+    },
+    {
+        "type": "REGISTER",
+        "value": "#D"
+    },
+    {
+        "type": "ASSIGNMENT",
+        "value": "MOV"
+    },
+    {
+        "type": "INTEGER",
+        "value": "2"
+    },
+    {
+        "type": "REGISTER",
+        "value": "#A"
+    },
+    {
+        "type": "OPERATION",
+        "value": "SUB"
+    },
+    {
+        "type": "REGISTER",
+        "value": "#D"
+    },
+    {
+        "type": "REGISTER",
+        "value": "#A"
+    },
+    {
+        "type": "EOF",
+        "value": ";"
+    }
+]

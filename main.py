@@ -31,7 +31,7 @@ def parse(transitionMatrix, inputStr):
             state = transitionMatrix["errorState"]
             raise Exception("Reached error state at index " + str(index - 1) + ".")
 
-        while index < len(inputStr) and state < transitionMatrix["acceptingStateTreshold"]:
+        while index < len(inputStr) and int(state) < int(transitionMatrix["acceptingStateTreshold"]):
             char = inputStr[index]
             index += 1
 
@@ -43,10 +43,11 @@ def parse(transitionMatrix, inputStr):
                 state = transitionMatrix["errorState"]
                 raise Exception("Reached error state at index " + str(index - 1) + ".")
 
-        if state > transitionMatrix["specialAcceptingStateTreshold"]:
+        if int(state) > int(transitionMatrix["specialAcceptingStateTreshold"]) and not (int(state) == int(transitionMatrix["errorState"])):
             index -= 1
+            value = value[:-1]
 
-        if state < transitionMatrix["acceptingStateTreshold"]:
+        if int(state) < int(transitionMatrix["acceptingStateTreshold"]):
             raise Exception("Finished without accepting state.")
         
         tokens.append({ "type": transitionMatrix["acceptingStates"][state], "value": value })
